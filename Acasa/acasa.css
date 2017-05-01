@@ -1,0 +1,173 @@
+div#meniu {
+  position:relative; 
+    border-bottom: 2px solid #BDC3C7;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+ }
+.nav{
+    
+   list-style:none;
+   text-align:center;
+   margin-right: 0px;
+    margin-left: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.nav li{
+    display:inline;
+}
+.nav a{
+    display:inline-block;
+    padding:20px 20px 40px 20px;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  font-size: 28px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 26.4px;
+  text-decoration: none;
+  color: black;
+}
+#img{
+  vertical-align: middle;
+  padding-bottom: 20px;
+}
+}
+
+a:hover {
+    color: #0000b3;
+}
+
+
+#container{
+  width:604px;
+  height:453px;
+  position:relative;
+  margin-left: 500px;
+  margin-right: 500px;
+}
+
+#container .prevButton{
+  height:72px;
+  width:68px;
+  position:absolute;
+  background:url('buttons.png') no-repeat;
+  top:55%;
+  margin-top:-36px;
+  cursor:pointer;
+  z-index:2000;
+  background-position:left top;
+  left:0;
+}
+
+#container .prevButton:hover{ background-position:left bottom;left:0;}
+
+#container .nextButton{
+  height:72px;
+  width:68px;
+  position:absolute;
+  background:url('buttons.png') no-repeat;
+  top:55%;
+  margin-top:-36px;
+  cursor:pointer;
+  z-index:2000;
+  background-position:right top;
+  right:0;
+  margin-right: -275;
+}
+
+#container .nextButton:hover{background-position:right bottom;right:0;}
+
+#container ul{
+  width:800px;
+  height:500px;
+  list-style:none outside none;
+  position:relative;
+  overflow:hidden;
+
+}
+
+#container li:first-child{
+  display:list-item;
+  position:absolute;
+}
+
+#container li{
+  position:absolute;
+  display:none;
+}
+#text{
+  margin: 50px 50px 0px 50px;
+    padding: 30px 100px 0px 30px;
+}
+
+.read-more-state {
+  display: none;
+
+}
+
+.read-more-wrap{
+    font-family: Open Sans;
+    font-size: 20px;
+    padding: 20px 50px 0px 50px;
+    margin: 10px 30px 30px 30px;
+}
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Citeşte mai mult';
+  font-size: 18px;
+  color: black;
+
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Închide';
+  font-size: 18px;
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: #666;
+  font-size: .9em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: .25em;
+  margin-left:50%;
+  background-color: #A9A9A9;
+}
+#continut{
+  background-color: #F8F9F9;
+}
+#par1{
+    font-family: Open Sans;
+    font-size: 20px;
+    padding: 70px 50px 0px 50px;
+    margin: 30px 30px 30px 30px;
+}
+h1 {
+ font-family: "Open Sans";
+ font-size: 24px;
+ font-style: normal;
+ font-variant: normal;
+ font-weight: bold;
+ line-height: 26.4px;
+ padding-left: 40px;
+ text-decoration: underline;
+}
