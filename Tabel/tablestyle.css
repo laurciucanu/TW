@@ -1,0 +1,91 @@
+#content{
+	width: 1500px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px 10px 10px 10px;
+	background-color: #ffffb3;
+	border:2px solid gainsboro;
+}
+div#meniu {
+	position:relative; 
+    border-bottom: 2px solid #BDC3C7;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+ }
+.nav{
+    
+   list-style:none;
+   text-align:center;
+   margin-right: 0px;
+    margin-left: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.nav li{
+    display:inline;
+    line-height: 50px;
+}
+.nav a{
+    display:inline-block;
+    padding:20px 20px 40px 20px;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+	font-size: 28px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 26.4px;
+	text-decoration: none;
+	color: black;
+
+}
+#img{
+	vertical-align: middle;
+	padding-bottom: 20px;
+}
+body{
+	background-color: #F8F9F9;
+}
+
+#s{
+position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #F8F9F9;
+  text-align: center;
+ }
+a:hover {
+    background-color: : #d9d9d9;
+    
+}
+#tabel{
+	padding: 50px 10px 10px 10px;
+
+}
+th{
+	font-family: "Open Sans";
+	width:auto;
+	padding: 10px 10px 10px 10px;
+	font-size: 22px;
+	color: white;
+	background-color: #0066ff;
+	border: 3px solid black;
+}
+td{
+	font-family: "Open Sans";
+	padding: 7px 7px 7px 7px;
+	border: 2px solid black;
+	background-color: #e6f7ff;
+}
+ul { padding:0;} 
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+    
+}
+#s{
+	font-family: "Open Sans";
+}
