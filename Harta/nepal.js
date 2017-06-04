@@ -38,17 +38,7 @@ d3.json("nepal-districts.txt", function(error, ok) {
 			valueByNumarReplici[d.district] = d.numarReplici; 
 			
         });
-		svg.selectAll("text")
-		.data(counties.features)
-		.enter()    
-		.append("text")
-		.attr("opacity","1")
-		.attr("fill","black")
-		.attr("text-anchor","middle")
-		.attr("transform", function(d) { return "translate(" + path.centroid(d) + ")"; })
-		.text(function (d) {
-			if(valueByDecedati[d.properties.DISTRICT]!=undefined)
-			return d.properties.DISTRICT; }); 
+		
 		
 	//counties
     	svg.append("g")
@@ -59,7 +49,7 @@ d3.json("nepal-districts.txt", function(error, ok) {
             .append("path")
             .attr("d", path)
 			.attr("text-anchor","middle")
-			.attr("opacity","0.5")
+			.attr("opacity","0.9")
             .style("fill", function(d) {
                 if(valueByDecedati[d.properties.DISTRICT]<10){
                     return "#ffb2b2";
@@ -74,10 +64,21 @@ d3.json("nepal-districts.txt", function(error, ok) {
                     return "red";
                 }
 				
-    		return "#ccc";
+    		return "yellow";
     	});
 
-        
+        svg.selectAll("text")
+		.data(counties.features)
+		.enter()    
+		.append("text")
+		.attr("opacity","1")
+		.attr("fill","black")
+		.attr("font-weight","bold")
+		.attr("text-anchor","middle")
+		.attr("transform", function(d) { return "translate(" + path.centroid(d) + ")"; })
+		.text(function (d) {
+			if(valueByDecedati[d.properties.DISTRICT]!=undefined)
+			return d.properties.DISTRICT; }); 
 
         svg.selectAll("circle")
             .data(counties.features)
@@ -87,7 +88,7 @@ d3.json("nepal-districts.txt", function(error, ok) {
             .attr("r", function(d) {
                 if (valueByDecedati[d.properties.DISTRICT]) {
                     
-                    return "2";
+                    return "6";
                 }
              })
              .attr("fill","black")
