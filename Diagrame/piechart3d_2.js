@@ -4,17 +4,18 @@
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
           ['Task', 'Hours per Day'],
-          ['<5 secunde', 18],
-          ['între 5 şi 10 secunde', 16],                                         
-        ]);
+          ['<1000 clădiri distruse', 15],
+          ['între 1000 şi 10000 clădiri distruse', 7],
+          ['peste 10000 clădiri distruse', 12]
+          ]);
 
         var options = {
-          title: 'Durata cutremurelor din Nepal',
+          title: 'CLĂDIRI DISTRUSE',
           is3D: true,
-          colors:['green','orange'],
-          backgroundColor: '#ffffb3',
+          colors:['green','#E8CF00','red'],
+          backgroundColor: '#F8F8F8',
           titleTextStyle: {
-                  fontSize: 18, 
+                  fontSize: 22, 
                   bold: true,     
             }
         };

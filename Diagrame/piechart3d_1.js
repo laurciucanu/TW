@@ -10,12 +10,12 @@
         ]);
 
         var options = {
-          title: 'Câţi oameni au murit în cutremurul din Nepal?',
+          title: 'DECEDAȚI ÎN NEPAL',
           is3D: true,
           colors:['green','#E8CF00','orange','red'],
-          backgroundColor: '#ffffb3',
+          backgroundColor: '#F8F8F8',
           titleTextStyle: {
-                  fontSize: 18, 
+                  fontSize: 22, 
                   bold: true,     
             }
 

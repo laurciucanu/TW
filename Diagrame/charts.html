@@ -1,69 +1,68 @@
 <!DOCTYPE html>
 <html>
-  <head>  	
+  <head>    
+	  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+      <link rel="stylesheet" type="text/css" href="/tw/style.css">
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
 
-  	<link rel="stylesheet" type="text/css" href="chartStyle.css" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
   </head>
 
   <body>
-  <div id="meniu">
+<div class="meniu">
           <ul class="nav">
-          <img id="img" src="nepal-quake.jpg" >
-       <li><a href="http://localhost:8181/tw/acasa/acasa.html">DESPRE CUTREMURUL DIN NEPAL</a></li>
-        <li><a href="http://localhost:8181/tw/diagrame/charts.html">DIAGRAME</a></li>
-        <li><a href="http://localhost:8181/tw/tabel/tabel.html">TABEL</a></li>
-        <li><a href="http://localhost:8181/tw/harta/harta.html">HARTA</a></li>
-        <li><a href="http://localhost:8181/tw/regiuni/regiuni.html">REGIUNI </a></li>
+          <a class="pozaHeader" href="/tw/Acasa/acasa.html">
+         		 <img class="pozaHeader" src="/tw/nepal-quake.jpg" >
+        </a>
+       
+        <li><a href="/tw/Acasa/acasa.html">DESPRE CUTREMUR</a></li>
+        <li><a href="/tw/Diagrame/charts.html">DIAGRAME</a></li>
+        <li><a href="/tw/Tabel/tabel.html">TABEL</a></li>
+        <li><a href="/tw/Harta/harta.html">HARTA</a></li>
 
+    <div class="dropdown">
+         <li>REGIUNI&#9660;</li>
+      <ul class="dropdown-content ">
+        <li><a href="/tw/Regiuni/nord.html">Nord</a></li>
+        <li><a href="/tw/Regiuni/sud-vest.html">Sud-Vest</a></li>
+        <li><a href="/tw/Regiuni/sud.html">Sud</a></li>
+        <li><a href="/tw/Regiuni/sud-est.html">Sud-Est</a></li>
+        <li><a href="/tw/Regiuni/est.html">Est</a></li>
+        </ul>
       </ul>
     </div>
-  </br>
-  	<h1><center>DIAGRAMELE CUTREMURULUI DIN NEPAL</center></h1>
-  	</br>
-  	</br>
-  	</br>
+  <div class="contentDiagrame">
+  
+          <div class="diagrame">
 
-    <div id="content">
-          
           <div id="piechart_3d"></div>
-          <div id="piechart"></div>
-          <div id="donutchart"></div>
-          <div id="piechart2"></div>
+          
           <div id="piechart_3d2"></div>
-          <div id="donutchart2"></div>
-          <div id="donutchart3"></div>
-          <div id="piechart3"></div>
+          
           <div id="piechart_3d3"></div>
+          
+		  <h1>DISTRIBUȚIA MAGNITUDINII CUTREMURELOR</h1>
+		  
+          <div id="chartContainer" style="height: 100%; width: 100%;">
 
           <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
           <script type="text/javascript" src="piechart3d_1.js"></script>
-      	
-          <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-          <script type="text/javascript" src="piechart_1.js"></script>
-
-          <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-          <script type="text/javascript" src="donutchart_1.js"></script>
-
-          <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-          <script type="text/javascript" src="piechart_2.js"></script>
-
+          
           <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
           <script type="text/javascript" src="piechart3d_2.js"></script>
 
           <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-          <script type="text/javascript" src="donutchart_2.js"></script>
-
-          <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-          <script type="text/javascript" src="donutchart_3.js"></script>
-
-
-          <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-          <script type="text/javascript" src="piechart_3.js"></script>
-
-
-          <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
           <script type="text/javascript" src="piechart3d_3.js"></script>
+
+          <script src="http://d3js.org/d3.v3.min.js"></script>
+		  <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+          <script type="text/javascript" src="c3.js"></script>
+
+  
+      
     </div>
+  </div>
+  </div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">&#x25B2;</button>
+<script type="text/javascript" src="/tw/TopButton.js"></script>
   </body>
 </html>         
