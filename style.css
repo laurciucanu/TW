@@ -1,4 +1,5 @@
 /*Header*/
+/*Header*/
 
 
 .meniu {
@@ -111,11 +112,11 @@
     display: none; 
     position: fixed; 
     bottom: 20px; 
-    right: 30px; 
+    right: 50px; 
     z-index: 99; 
     border: none; 
     outline: none; 
-    background-color: gainsboro; 
+    background-color: #939393; 
     color: black; 
     cursor: pointer; 
     padding: 15px; 
@@ -135,13 +136,16 @@
 
 /* Acasa */
 
+body{
+  background: url(/TW/background.jpg) ;
+}
+
 .contentAcasa{
   margin-top:0px;
   position:relative; 
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  background-color:#ECECEA;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   padding-bottom:30px;
   margin-top:220px;
 }
@@ -150,9 +154,8 @@
 
 .slides {
     padding: 0;
-    width: 750px;
-    width: 750px;
-    height: 420px;
+    width: 1400px;
+    height: 750px;
     display: block;
     margin: 0 auto;
     position: relative;
@@ -174,8 +177,8 @@
 .slide {
     top: 0;
     opacity: 0;
-    width: 609px;
-    height: 420px;
+    width: 1400px;
+    height: 750px;
     display: block;
     position: absolute;
 
@@ -185,7 +188,7 @@
 }
 
 .slide img {
-    width: 750px;
+    width: 100%;
     height: 100%;
 }
 
@@ -212,8 +215,14 @@
 .slide:hover + .nav label { opacity: 0.5; }
 
 .nav label:hover { opacity: 1; }
-label.prev {left: 0px;  }
-.nav .next { right: 0; }
+label.prev {
+	left: 0px;
+	top:160px;
+}
+.nav .next {
+	right: 0; 
+	top:160px;
+}
 
 input:checked + .slide-container  .slide {
     opacity: 1;
@@ -280,8 +289,10 @@ input#img-8:checked ~ .nav-dots label#img-dot-8 {
 .read-more-wrap{
     font-family: Open Sans;
     font-size: 20px;
-    padding: 20px 50px 0px 50px;
-    margin: 10px 30px 30px 30px;
+    padding: 20px 50px 20px 50px;
+    margin: 10px 30px -15px 30px;
+	background: url(/TW/box.jpg);
+
 }
 .read-more-target {
   opacity: 0;
@@ -323,8 +334,9 @@ input#img-8:checked ~ .nav-dots label#img-dot-8 {
     background-color: #D9853B;
     border: none;
     border-radius: 15px;
-    margin: auto;
+    margin-right: 60px;
     box-shadow: 0 9px #7c4f27;
+	float:right;
 }
 
 .read-more-trigger:hover {background-color: #9e6534}
@@ -350,10 +362,11 @@ p.paragrafDrepta{
     margin: 0px 0px 40px 40px;
 }
 p.read-more-target{
-  margin:40px 40px 0px 40px;
+  margin:40px 40px 0px 0px;
 }
-.pagube{
+.pagube, .victime, .efecte{
    width:100%;
+   margin-bottom:100px;
 }
 
 /* End paragraf */
@@ -364,7 +377,8 @@ p.read-more-target{
    width:37%;
    vertical-align:top;
    margin-left:40px;
-   height: 373px;
+   height: 500px;
+   
 }
 
 /* End Imagini */
@@ -389,11 +403,58 @@ h1 {
 .text{
   width:59%;
   display:inline-block;
+  background:none;
+  margin-left:20px;
 }
 
 #text{
   margin: 50px 50px 0px 50px;
     padding: 30px 100px 0px 30px;
+}
+
+.titluCaseta{
+	color: #316e66;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    border-bottom: 1px dotted #9c8964;
+    margin: 0;
+    padding: 0 0 12px;
+    text-transform: uppercase;
+	font-size: 26px;
+}
+
+
+@media screen and (max-width:1024px){			/* IPAD PRO*/
+
+.pagubeJPG, .victimeJPG, .efecteGeologiceJPG{
+	margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+	margin-bottom:30px;
+	}
+
+	p.paragrafDrepta{
+		margin-left: auto;
+		margin-right: auto;
+		width: 781px;
+
+	}
+
+	.read-more-wrap{
+		margin: 10px 30px -53px 30px;
+	}
+
+	.read-more-trigger{
+		width:20%;
+		margin-bottom:50px;
+	}	
+	p.paragraf{
+		margin:40px 40px 40px 40px;
+
+	}
+	#myBtn{
+		right:70;
+	}
 }
 
 /* End Text */
@@ -408,14 +469,71 @@ h1 {
 
 .diagrame{
   text-align: center;
+  padding-top:30px;
 }
 
 #piechart_3d, #piechart, #donutchart, #piechart2, #piechart_3d2, #donutchart2, #donutchart3, #piechart3, #piechart_3d3{
-  width: 488px; 
+  width: 33%; 
   height: 500px; 
   display: inline-block;
      
 }
+
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: orange;
+}
+
+.bar:hover {
+  fill: orangered ;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+  font-size:18px;
+}
+
+
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 15px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+g.y.axis{
+	font-size:20px;
+}
+
+
 /*End-Diagrame*/
 
 
@@ -425,13 +543,17 @@ h1 {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-  background-color:#ECECEA;
+  background-color:#F8F8F8;
   padding-bottom:30px;
   margin-top:220px;
 }
-.titluDiagrame{
-  padding:40px 0px 40px 0px;
+	
+svg{
+    display: block;
+    margin: 0 auto;
+	background-color:#F8F8F8;
 }
+
 
 h1 {
  font-family: "Open Sans";
@@ -462,7 +584,7 @@ h1 {
     stroke: white;
 }
 .axis text {
-    font: 30px sans-serif;
+    font: 20px sans-serif;
 }
 
 .axis line, .axis path {
@@ -691,4 +813,5 @@ vertical-align:top;
 }
 
 /* End REGIUNI */
+
 
