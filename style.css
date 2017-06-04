@@ -1,5 +1,4 @@
 /*Header*/
-/*Header*/
 
 
 .meniu {
@@ -306,6 +305,7 @@ input#img-8:checked ~ .nav-dots label#img-dot-8 {
   font-size: inherit;
   max-height: 999em;
   margin-top: 30px;
+  max-height: 999em;
 
 }
 
@@ -322,7 +322,7 @@ input#img-8:checked ~ .nav-dots label#img-dot-8 {
 }
 
 .read-more-trigger {
-  display: block;
+    display: inline-block;
     padding: 15px 25px;
     width: 11%;
     font-size: 24px;
@@ -362,7 +362,7 @@ p.paragrafDrepta{
     margin: 0px 0px 40px 40px;
 }
 p.read-more-target{
-  margin:40px 40px 0px 0px;
+  margin:40px 0px 0px 0px;
 }
 .pagube, .victime, .efecte{
    width:100%;
