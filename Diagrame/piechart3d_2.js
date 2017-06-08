@@ -13,7 +13,7 @@
           title: 'CLĂDIRI DISTRUSE',
           is3D: true,
           colors:['green','#E8CF00','red'],
-          backgroundColor: '#F8F8F8',
+          backgroundColor: '#FAFAFA',
           titleTextStyle: {
                   fontSize: 22, 
                   bold: true,     

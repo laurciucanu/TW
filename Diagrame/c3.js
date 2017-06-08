@@ -1,4 +1,4 @@
-var margin = {top: 50, right: 20, bottom:100, left: 70},
+var margin = {top: 50, right: 70, bottom:100, left: 70},
     width = 1800 - margin.left - margin.right,
     height = 700 - margin.top - margin.bottom;
 
@@ -33,6 +33,7 @@ var svg = d3.select("body").append("svg")
     .attr("height", height + margin.top + margin.bottom)
 	.append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+	
 
 svg.call(tip);
 
@@ -71,7 +72,10 @@ d3.tsv("data2.tsv", type, function(error, data) {
       .on('mouseover', tip.show)
       .on('mouseout', tip.hide)
 
+
 });
+
+
 
 function type(d) {
   d.Magnitudine = +d.Magnitudine;
