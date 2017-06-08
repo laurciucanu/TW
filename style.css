@@ -6,7 +6,7 @@
   top:0;
   left:0;
   right:0;
-  z-index:99999999999;
+  z-index:9999;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -38,7 +38,7 @@
   font-weight: bold;
   line-height: 24px;
   text-decoration: none;
-  color: #558C89;
+  color: #a0c5c3;
 }
 
 .nav li a:hover{
@@ -63,7 +63,7 @@
   font-weight: bold;
   line-height: 24px;
   text-decoration: none;
-  color: #558C89;
+  color: #a0c5c3;
 }
 
 .dropdown-content {
@@ -281,7 +281,7 @@ input#img-8:checked ~ .nav-dots label#img-dot-8 {
 /*Buton read-more*/
 
 .read-more-state {
-  display: none;
+	display: none;
 
 }
 
@@ -289,36 +289,39 @@ input#img-8:checked ~ .nav-dots label#img-dot-8 {
     font-family: Open Sans;
     font-size: 20px;
     padding: 20px 50px 20px 50px;
-    margin: 10px 30px -15px 30px;
+    margin: 10px 30px -70px 30px;
 	background: url(/TW/box.jpg);
 
 }
 .read-more-target {
-  opacity: 0;
-  max-height: 0;
-  font-size: 0;
-  transition: .25s ease;
+	opacity: 0;
+	max-height: 0;
+	font-size: 0;
+	transition: .25s ease;
 }
 
 .read-more-state:checked ~ .read-more-wrap .read-more-target {
-  opacity: 1;
-  font-size: inherit;
-  max-height: 999em;
-  margin-top: 30px;
-  max-height: 999em;
+	opacity: 1;
+	font-size: inherit;
+	max-height: 999em;
+	margin-top: 30px;
+	max-height: 999em;
 
 }
 
 .read-more-state ~ .read-more-trigger:before {
-  content: 'Citeşte mai mult';
-  font-size: 18px;
-  color: black;
+	content: 'Citeşte mai mult';
+	font-size: 22px;
+	color: #a0c5c3;
+	font-weight:bold;
 
 }
 
 .read-more-state:checked ~ .read-more-trigger:before {
-  content: 'Închide';
-  font-size: 18px;
+	content: 'Închide';
+	font-size: 22	px;
+	color: #a0c5c3;
+	font-weight:bold;
 }
 
 .read-more-trigger {
@@ -331,20 +334,22 @@ input#img-8:checked ~ .nav-dots label#img-dot-8 {
     text-decoration: none;
     outline: none;
     color: #fff;
-    background-color: #D9853B;
+    background-color: #004d99;
     border: none;
     border-radius: 15px;
     margin-right: 60px;
-    box-shadow: 0 9px #7c4f27;
+    box-shadow: 0 9px #003366;
 	float:right;
 }
 
-.read-more-trigger:hover {background-color: #9e6534}
+.read-more-trigger:hover {
+	background-color: #004080
+}
 
 .read-more-trigger:active {
-  background-color: #9e6534;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+	background-color: #004080;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
 }
 
 /* End read-more button */
@@ -357,7 +362,7 @@ p.paragraf{
     margin: 40px 40px 40px 120px;
 }
 p.paragrafDrepta{
-  font-family: Open Sans;
+	font-family: Open Sans;
     font-size: 20px;
     margin: 0px 0px 40px 40px;
 }
@@ -366,7 +371,7 @@ p.read-more-target{
 }
 .pagube, .victime, .efecte{
    width:100%;
-   margin-bottom:100px;
+   margin-bottom:160px;
 }
 
 /* End paragraf */
@@ -386,14 +391,14 @@ p.read-more-target{
 /* Subtitlu */
 
 h1 {
- font-family: "Open Sans";
- font-size: 24px;
- font-style: normal;
- font-variant: normal;
- font-weight: bolder;
- line-height: 26.4px;
- padding-left: 40px;
- text-decoration: none;
+	font-family: "Open Sans";
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bolder;
+	line-height: 26.4px;
+	padding-left: 40px;
+	text-decoration: none;
 }
 
 /* End Subtitlu */
@@ -401,14 +406,14 @@ h1 {
 /* Text */
 
 .text{
-  width:59%;
-  display:inline-block;
-  background:none;
-  margin-left:20px;
+	width:59%;
+	display:inline-block;
+	background:none;
+	margin-left:20px;
 }
 
 #text{
-  margin: 50px 50px 0px 50px;
+	margin: 50px 50px 0px 50px;
     padding: 30px 100px 0px 30px;
 }
 
@@ -424,42 +429,10 @@ h1 {
 }
 
 
-@media screen and (max-width:1024px){			/* IPAD PRO*/
 
-.pagubeJPG, .victimeJPG, .efecteGeologiceJPG{
-	margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-	margin-bottom:30px;
-	}
 
-	p.paragrafDrepta{
-		margin-left: auto;
-		margin-right: auto;
-		width: 781px;
 
-	}
 
-	.read-more-wrap{
-		margin: 10px 30px -53px 30px;
-	}
-
-	.read-more-trigger{
-		width:20%;
-		margin-bottom:50px;
-	}	
-	p.paragraf{
-		margin:40px 40px 40px 40px;
-
-	}
-	#myBtn{
-		right:70;
-	}
-}
-
-/* End Text */
-
-/* END ACASA */
 
 /* ---------------------------------------------------- */
 
@@ -468,14 +441,15 @@ h1 {
 /*Diagrame*/
 
 .diagrame{
-  text-align: center;
-  padding-top:30px;
+	text-align: center;
+	padding-top:30px;
+	background-color: #FAFAFA;
 }
 
-#piechart_3d, #piechart, #donutchart, #piechart2, #piechart_3d2, #donutchart2, #donutchart3, #piechart3, #piechart_3d3{
-  width: 33%; 
-  height: 500px; 
-  display: inline-block;
+#piechart_3d, #piechart_3d2, #piechart_3d3{
+	width: 33%; 
+	height: 500px; 
+	display: inline-block;
      
 }
 
@@ -539,19 +513,22 @@ g.y.axis{
 
 /*Content Pagina Diagrame*/
 .contentDiagrame{
-  position:relative; 
+	position:relative; 
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-  background-color:#F8F8F8;
-  padding-bottom:30px;
-  margin-top:220px;
+	background-color:#FAFAFA;
+	padding-bottom:30px;
+	margin-top:220px;
 }
+	
+	
 	
 svg{
     display: block;
     margin: 0 auto;
-	background-color:#F8F8F8;
+	background-color:#FAFAFA;
+	width:90%;
 }
 
 
@@ -647,7 +624,6 @@ margin-top:0px;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-  background-color:#ECECEA;
   padding-bottom:30px;
   margin-top:220px;
 }
@@ -777,14 +753,16 @@ table {
     padding: 1px 1px 1px 1px;
     -webkit-box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.5);
     transition: all 0.1s linear 0s;
-
+	background: url(/TW/box.jpg);
 }
 .pozanv{
-  width: 40%;
-  display: inline-block;
-  padding: 20px 20px 20px 20px;
-  margin: 25px 25px 25px 25px;
-vertical-align:top;
+	width: 40%;
+	display: inline-block;
+	padding: 20px 20px 20px 20px;
+	margin: 25px 25px 25px 25px;
+	vertical-align:top;
+	max-height: 426px;
+	border-radius:9%;
 }
 .textnv{
   width: 40%;
@@ -812,6 +790,165 @@ vertical-align:top;
 	
 }
 
+/* Modal+Charts */
+
+.modalDialog, .modalDialog1, .modalDialog2, .modalDialog3, .modalDialog4, .modalDialog5, .modalDialog6, .modalDialog7, .modalDialog8, .modalDialog9, .modalDialog10
+, .modalDialog11, .modalDialog12 {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalDialog:target, modalDialog1:target, modalDialog2:target, modalDialog3:target, modalDialog4:target, modalDialog5:target, modalDialog6:target, modalDialog7:target
+, modalDialog8:target, modalDialog9:target, modalDialog10:target, modalDialog11:target, modalDialog12:target {
+    opacity:1;
+    pointer-events: auto;
+	text-align: center;
+}
+.modalDialog > div, .modalDialog1 > div, .modalDialog2 > div, .modalDialog3 > div, .modalDialog4 > div, .modalDialog5 > div, .modalDialog6 > div, .modalDialog7 > div 
+, .modalDialog8 > div, .modalDialog9 > div, .modalDialog10 > div, .modalDialog11 > div, .modalDialog12 > div{
+    width: 800px;
+    position: relative;
+    margin: 10% auto 10%;
+    padding: 30px 20px 30px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+}
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+.close:hover {
+    background: #454545;
+}
+#modal
+{
+	display: inline-block;
+    padding: 15px 25px;
+    width: 80%;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #B0171F;
+    border: none;
+    border-radius: 15px;
+    margin-right: 60px;
+    box-shadow: 0 9px #710f14;
+    float: right;
+	margin-top:70px;
+}
+svg#fillgaugeBhojpur, svg#fillgaugeTaplejung, svg#fillgaugeTerhathum ,svg#fillgaugeSolukhumbu,svg#fillgaugeDhanusha, svg#fillgaugeSarlahi, svg#fillgaugeSinduhli 
+,svg#fillgaugeSiraha,svg#fillgaugePalpa, svg#fillgaugeNawalparasi, svg#fillgaugeChitawan ,svg#fillgaugeParsa,svg#fillgaugeBara, svg#fillgaugeRautahat
+,svg#fillgaugeMakawanpur ,svg#fillgaugeMorang ,svg#fillgaugeSunsari, svg#fillgaugeRakum, svg#fillgaugeRolpa ,svg#fillgaugeGulmi,svg#fillgaugeDolakha,svg#fillgaugeKavre
+,svg#fillgaugeRamechhap, svg#fillgaugeSindhupalchok ,svg#fillgaugeKathmandu,svg#fillgaugeBhaktapur, svg#fillgaugeNuwakot,svg#fillgaugeRasuwa ,svg#fillgaugeDhading ,svg#fillgaugeGorkha
+,svg#fillgaugeLamjung, svg#fillgaugeKaski ,svg#fillgaugeOkhaldhunga{
+    background: -webkit-linear-gradient(#fff, #999);
+}
+/*END Modal+Charts */
+
 /* End REGIUNI */
 
 
+
+
+
+
+
+
+
+@media screen and (max-width:1024px){			/* IPAD PRO*/
+
+
+/*ACASA*/
+
+.nav li a{
+	font-size: 17px;
+}
+.dropdown{
+	font-size: 17px;
+}
+/
+.pagubeJPG, .victimeJPG, .efecteGeologiceJPG{
+	margin-left: auto;
+    margin-right: auto;
+    width: 38%;
+	margin-bottom:30px;
+	height:500px;
+	}
+
+	p.paragrafDrepta{
+		margin-left: auto;
+		margin-right: auto;
+		width: 781px;
+
+	}
+
+	.read-more-wrap{
+		margin: 10px 30px -53px 30px;
+	}
+
+	.read-more-trigger{
+		width:20%;
+		margin-bottom:50px;
+	}	
+	p.paragraf{
+		margin:40px 40px 40px 40px;
+
+	}
+	#myBtn{
+		right:20;
+	}
+	.pozanv{
+		width:90%;
+		max-height:510px;
+	}
+	.rowText{
+		width:100%;
+		margin-bottom:25px;
+	}
+	#modal{
+	width:85%;
+	margin-top:40px;
+	}
+	.titluRegiuni{
+		margin-bottom: 0px; 
+		margin-top: 0px; 
+		padding-top: 0px; 
+	}
+	.textnv{
+		font-size:24px;
+	}
+}
+
+/* End Text */
+
+/* END ACASA */
