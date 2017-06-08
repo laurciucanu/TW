@@ -1,0 +1,13 @@
+		var gauge1 = loadLiquidFillGauge("fillgaugeDolakha", 1);
+		var gauge2 = loadLiquidFillGauge("fillgaugeKavre", 2);
+		var gauge3 = loadLiquidFillGauge("fillgaugeRamechhap", 3);
+		var gauge4 = loadLiquidFillGauge("fillgaugeSindhupalchok", 4);
+		var gauge5 = loadLiquidFillGauge("fillgaugeKathmandu", 5);
+		var gauge6 = loadLiquidFillGauge("fillgaugeBhaktapur", 6);
+		var gauge7 = loadLiquidFillGauge("fillgaugeNuwakot", 7);
+		var gauge8 = loadLiquidFillGauge("fillgaugeRasuwa", 8);
+		var gauge9 = loadLiquidFillGauge("fillgaugeDhading", 9);
+		var gauge10 = loadLiquidFillGauge("fillgaugeGorkha", 10);
+		var gauge11 = loadLiquidFillGauge("fillgaugeLamjung", 11);
+		var gauge12 = loadLiquidFillGauge("fillgaugeKaski", 12);
+		var gauge13 = loadLiquidFillGauge("fillgaugeOkhaldhunga", 13);

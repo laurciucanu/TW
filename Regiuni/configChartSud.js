@@ -1,0 +1,11 @@
+		var gauge17 = loadLiquidFillGauge("fillgaugeDhanusha", 11);
+		var gauge18 = loadLiquidFillGauge("fillgaugeSarlahi", 12);
+		var gauge19 = loadLiquidFillGauge("fillgaugeSinduhli", 13);
+		var gauge20 = loadLiquidFillGauge("fillgaugeSiraha", 14);
+		var gauge21 = loadLiquidFillGauge("fillgaugePalpa", 15);
+		var gauge22 = loadLiquidFillGauge("fillgaugeNawalparasi", 16);
+		var gauge23 = loadLiquidFillGauge("fillgaugeChitawan", 17);
+		var gauge24 = loadLiquidFillGauge("fillgaugeParsa", 18);
+		var gauge25 = loadLiquidFillGauge("fillgaugeBara", 19);
+		var gauge26 = loadLiquidFillGauge("fillgaugeRautahat", 20);
+		var gauge27 = loadLiquidFillGauge("fillgaugeMakawanpur", 21);

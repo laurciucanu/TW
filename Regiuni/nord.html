@@ -1,8 +1,10 @@
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<link rel="stylesheet" type="text/css" href="/tw/style.css">
-<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="/tw/style.css">
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+	<script src="http://d3js.org/d3.v3.min.js" language="JavaScript"></script>
+    <script src="liquidFillGauge.js" language="JavaScript"></script>
 
 </head>
 
@@ -66,6 +68,18 @@
 	<li>Pagube materiale: 20.000</li>
 	<li>Număr replici: 6</li>
 	
+			<a href="#openModal"><button type="afla" id="modal">Restaurare district</button></a>
+
+<div id="openModal" class="modalDialog">
+    <div>	<a href="#close" title="Inchide" class="close">X</a>
+
+        <svg id="fillgaugeDolakha" width="800px" height="600px"></svg>
+	
+
+       
+    </div>
+</div>
+	
 </ul>
 
 </div>
@@ -101,6 +115,15 @@
 	<li>Adâncime: 1000 m</li>
 	<li>Pagube materiale: 400.000</li>
 	<li>Număr replici: 4</li>
+	
+	<a href="#openModal1"><button type="afla" id="modal">Restaurare district</button></a>
+
+<div id="openModal1" class="modalDialog">
+    <div>	<a href="#close" title="Inchide" class="close">X</a>
+
+        <svg id="fillgaugeKavre" width="800px" height="600px"></svg>
+		</div>
+		</div>
 	
 </ul>
 
@@ -138,6 +161,15 @@
 	<li>Pagube materiale: 73.200</li>
 	<li>Număr replici: 2</li>
 	
+	<a href="#openModal2"><button type="afla" id="modal">Restaurare district</button></a>
+
+<div id="openModal2" class="modalDialog">
+    <div>	<a href="#close" title="Inchide" class="close">X</a>
+
+        <svg id="fillgaugeRamechhap" width="800px" height="600px"></svg>
+		</div>
+		</div>	
+	
 </ul>
 
 </div>
@@ -174,6 +206,15 @@
 	<li>Pagube materiale: 27.000</li>
 	<li>Număr replici: 3</li>
 	
+	<a href="#openModal3"><button type="afla" id="modal">Restaurare district</button></a>
+
+<div id="openModal3" class="modalDialog">
+    <div>	<a href="#close" title="Inchide" class="close">X</a>
+
+        <svg id="fillgaugeSindhupalchok" width="800px" height="600px"></svg>
+		</div>
+		</div>	
+	
 </ul>
 
 </div>
@@ -209,6 +250,15 @@
 	<li>Adâncime: 431 m</li>
 	<li>Pagube materiale: 1.000.000</li>
 	<li>Număr replici: 9</li>
+	
+	<a href="#openModal4"><button type="afla" id="modal">Restaurare district</button></a>
+
+<div id="openModal4" class="modalDialog">
+    <div>	<a href="#close" title="Inchide" class="close">X</a>
+
+        <svg id="fillgaugeKathmandu" width="800px" height="600px"></svg>
+		</div>
+		</div>	
 	
 </ul>
 
@@ -247,6 +297,15 @@
 	<li>Pagube materiale: 115.000</li>
 	<li>Număr replici: 7</li>
 	
+	<a href="#openModal5"><button type="afla" id="modal">Restaurare district</button></a>
+
+<div id="openModal5" class="modalDialog">
+    <div>	<a href="#close" title="Inchide" class="close">X</a>
+
+        <svg id="fillgaugeBhaktapur" width="800px" height="600px"></svg>
+		</div>
+		</div>	
+	
 </ul>
 
 </div>
@@ -282,6 +341,15 @@
 	<li>Adâncime: 1342 m</li>
 	<li>Pagube materiale: 64.321</li>
 	<li>Număr replici: 3</li>
+	
+	<a href="#openModal6"><button type="afla" id="modal">Restaurare district</button></a>
+
+<div id="openModal6" class="modalDialog">
+    <div>	<a href="#close" title="Inchide" class="close">X</a>
+
+        <svg id="fillgaugeNuwakot" width="800px" height="600px"></svg>
+		</div>
+		</div>	
 	
 </ul>
 
@@ -320,6 +388,15 @@
 	<li>Pagube materiale: 119.745</li>
 	<li>Număr replici: 1</li>
 	
+<a href="#openModal7"><button type="afla" id="modal">Restaurare district</button></a>
+
+<div id="openModal7" class="modalDialog">
+    <div>	<a href="#close" title="Inchide" class="close">X</a>
+
+        <svg id="fillgaugeRasuwa" width="800px" height="600px"></svg>
+		</div>
+		</div>	
+	
 </ul>
 
 </div>
@@ -356,6 +433,15 @@
 	<li>Adâncime: 5.512 m</li>
 	<li>Pagube materiale: 168.894</li>
 	<li>Număr replici: 3</li>
+	
+	<a href="#openModal8"><button type="afla" id="modal">Restaurare district</button></a>
+
+<div id="openModal8" class="modalDialog">
+    <div>	<a href="#close" title="Inchide" class="close">X</a>
+
+        <svg id="fillgaugeDhading" width="800px" height="600px"></svg>
+		</div>
+		</div>	
 	
 </ul>
 
@@ -394,6 +480,15 @@
 	<li>Pagube materiale: 34.123</li>
 	<li>Număr replici: 4</li>
 	
+		<a href="#openModal9"><button type="afla" id="modal">Restaurare district</button></a>
+
+<div id="openModal9" class="modalDialog">
+    <div>	<a href="#close" title="Inchide" class="close">X</a>
+
+        <svg id="fillgaugeGorkha" width="800px" height="600px"></svg>
+		</div>
+		</div>	
+	
 </ul>
 
 </div>
@@ -430,6 +525,15 @@
 	<li>Adâncime: 3.111 m</li>
 	<li>Pagube materiale: 88.421</li>
 	<li>Număr replici: 0</li>
+	
+	<a href="#openModal10"><button type="afla" id="modal">Restaurare district</button></a>
+
+<div id="openModal10" class="modalDialog">
+    <div>	<a href="#close" title="Inchide" class="close">X</a>
+
+        <svg id="fillgaugeLamjung" width="800px" height="600px"></svg>
+		</div>
+		</div>	
 	
 </ul>
 
@@ -468,6 +572,15 @@
 	<li>Pagube materiale: 145.321</li>
 	<li>Număr replici: 2</li>
 	
+	<a href="#openModal11"><button type="afla" id="modal">Restaurare district</button></a>
+
+<div id="openModal11" class="modalDialog">
+    <div>	<a href="#close" title="Inchide" class="close">X</a>
+
+        <svg id="fillgaugeKaski" width="800px" height="600px"></svg>
+		</div>
+		</div>	
+	
 </ul>
 
 </div>
@@ -504,6 +617,15 @@
 	<li>Pagube materiale: 8.000</li>
 	<li>Număr replici: 1</li>
 	
+	<a href="#openModal12"><button type="afla" id="modal">Restaurare district</button></a>
+
+<div id="openModal12" class="modalDialog">
+    <div>	<a href="#close" title="Inchide" class="close">X</a>
+
+        <svg id="fillgaugeOkhaldhunga" width="800px" height="600px"></svg>
+		</div>
+		</div>	
+	
 </ul>
 
 </div>
@@ -514,6 +636,9 @@
 
 </div>
 <button onclick="topFunction()" id="myBtn" title="Go to top">&#x25B2;</button>
+
 <script type="text/javascript" src="/tw/TopButton.js"></script>
+<script src="configChartNord.js" language="JavaScript"></script>
+
 </body>
 </html>

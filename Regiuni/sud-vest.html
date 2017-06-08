@@ -1,8 +1,11 @@
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<link rel="stylesheet" type="text/css" href="/tw/style.css">
-<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="/tw/style.css">
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+	<script src="http://d3js.org/d3.v3.min.js" language="JavaScript"></script>
+    <script src="liquidFillGauge.js" language="JavaScript"></script>
 
 </head>
 
@@ -67,6 +70,15 @@
 	<li>Pagube materiale: 22.222</li>
 	<li>Număr replici: 6</li>
 	
+	<a href="#openModal"><button type="afla" id="modal">Restaurare district</button></a>
+
+<div id="openModal" class="modalDialog">
+    <div>	<a href="#close" title="Inchide" class="close">X</a>
+
+        <svg id="fillgaugeRakum" width="800px" height="600px"></svg>
+		</div>
+		</div>	
+	
 </ul>
 
 </div>
@@ -105,6 +117,15 @@
 	<li>Adâncime: 4.132 m</li>
 	<li>Pagube materiale: 254.000</li>
 	<li>Număr replici: 4</li>
+	
+	<a href="#openModal1"><button type="afla" id="modal">Restaurare district</button></a>
+
+<div id="openModal1" class="modalDialog">
+    <div>	<a href="#close" title="Inchide" class="close">X</a>
+
+        <svg id="fillgaugeRolpa" width="800px" height="600px"></svg>
+		</div>
+		</div>	
 	
 </ul>
 
@@ -145,6 +166,15 @@
 	<li>Pagube materiale: 271.000</li>
 	<li>Număr replici: 0</li>
 	
+	<a href="#openModal2"><button type="afla" id="modal">Restaurare district</button></a>
+
+<div id="openModal2" class="modalDialog">
+    <div>	<a href="#close" title="Inchide" class="close">X</a>
+
+        <svg id="fillgaugeGulmi" width="800px" height="600px"></svg>
+		</div>
+		</div>	
+	
 </ul>
 
 </div>
@@ -156,5 +186,7 @@
 </div>
 <button onclick="topFunction()" id="myBtn" title="Go to top">&#x25B2;</button>
 <script type="text/javascript" src="/tw/TopButton.js"></script>
+<script src="configChartSudVest.js" language="JavaScript"></script>
+
 </body>
 </html>
