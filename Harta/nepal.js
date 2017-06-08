@@ -64,7 +64,7 @@ d3.json("nepal-districts.txt", function(error, ok) {
                     return "red";
                 }
 				
-    		return "yellow";
+    		return "gainsboro";
     	});
 
         svg.selectAll("text")
