@@ -1,4 +1,5 @@
-# TW
+# NEDa (Nepal Earthquake Data Explorer)
+
 
 Recurgand la datele publice privitoare la cutremurul din Nepal, se doreste implementarea unei aplicatii Web si a API-ului REST aferent
 pentru explorarea, filtrarea, vizualizarea si, eventual, actualizarea informatiilor de interes. API-ul REST va recurge la formatele JSON 
