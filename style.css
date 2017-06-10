@@ -894,17 +894,28 @@ svg#fillgaugeBhojpur, svg#fillgaugeTaplejung, svg#fillgaugeTerhathum ,svg#fillga
 
 /*ACASA*/
 
+.slide{
+ width: 95%
+
+
+}
+
+.slides{
+ width: 105%
+}
+
+
 .nav li a{
 	font-size: 17px;
 }
 .dropdown{
 	font-size: 17px;
 }
-/
+
 .pagubeJPG, .victimeJPG, .efecteGeologiceJPG{
 	margin-left: auto;
     margin-right: auto;
-    width: 38%;
+    width: 100%;
 	margin-bottom:30px;
 	height:500px;
 	}
@@ -917,7 +928,7 @@ svg#fillgaugeBhojpur, svg#fillgaugeTaplejung, svg#fillgaugeTerhathum ,svg#fillga
 	}
 
 	.read-more-wrap{
-		margin: 10px 30px -53px 30px;
+		margin: 10px 30px -65px 30px;
 	}
 
 	.read-more-trigger{
@@ -951,21 +962,43 @@ svg#fillgaugeBhojpur, svg#fillgaugeTaplejung, svg#fillgaugeTerhathum ,svg#fillga
 	.textnv{
 		font-size:24px;
 	}
+	.text{
+	width: 100%;
+    margin-left: auto;
+    margin-bottom: 30px;
+    margin-right: auto;
+	}
+	.nav .next{
+		right:50px;
+	}
+	th{
+		font-size:12px;
+	}
+	tabel{
+		width:100%;
+	}
+	.dropdown-content{
+		min-width:130px
+	}
 }
-
-/* End Text */
-
-/* END ACASA */
-
-#legend {
-    padding: 1.5em 0 0 1.5em;
-}
-
-li.key {
-    border-top-width: 15px;
-    border-top-style: solid;
-    font-size: .75em;
-    width: 10%;
-    padding-left: 0;
-    padding-right: 0;
+@media screen and (min-device-width : 414px) 
+    and (-webkit-device-pixel-ratio: 3){
+	.nav li a {
+		font-size: 13px;
+	}
+	.dropdown {
+    font-size: 14px;
+	}
+	#modal{
+	width: 110%;
+	}
+	.textnv {
+    font-size: 17px;
+	}
+	.read-more-trigger{
+	width:23%;
+	}
+	.dropdown-content{
+		min-width:90px
+	}
 }
