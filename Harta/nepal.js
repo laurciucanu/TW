@@ -1,4 +1,4 @@
-var width = 1600, height = 800;
+var width = 1800, height = 800;
 
 var divNode = d3.select('#map').node();
 
@@ -16,6 +16,8 @@ var svg = d3.select("#map").append("svg").attr("width", width).attr("height", he
 d3.json("nepal-districts.txt", function(error, ok) {
 	var counties = topojson.feature(ok, ok.objects.districts);
 
+	
+	
     d3.csv("district.csv",function(data){
         var valueByDecedati = {};
 		var valueByRaniti={};
@@ -49,7 +51,32 @@ d3.json("nepal-districts.txt", function(error, ok) {
             .append("path")
             .attr("d", path)
 			.attr("text-anchor","middle")
-			.attr("opacity","0.9")
+			.attr("opacity","1")
+			.on("mousemove", function(d){
+				if(valueByDecedati[d.properties.DISTRICT]!= undefined){
+                       var absoluteMousePos = d3.mouse(divNode);
+                       d3.select("#tooltip")
+						   .style("left", absoluteMousePos[0]-40 + "px")
+                           .style("top", absoluteMousePos[1]-180 + "px")
+                           .select("#value")
+                           .attr("class","font")
+                           .html(function(){
+							   return "<strong>"+"Detalii despre cutremurul din "+"<br>" + d.properties.DISTRICT +"</strong> " + "<br><br>" 
+							   +"\u2022 Decedati: <strong>" + valueByDecedati[d.properties.DISTRICT] + "</strong> "	+ "<br>"
+							   +"\u2022 Raniti: <strong>" + valueByRaniti[d.properties.DISTRICT] + "</strong>"+ "<br>"
+							   +"\u2022 Disparuti: <strong>" + valueByDisparuti[d.properties.DISTRICT] + "</strong>"+ "<br>"
+							   +"\u2022 Cladiri distruse: <strong>" + valueByCladiriDistruse[d.properties.DISTRICT] + "</strong>"+ "<br>"
+							   +"\u2022 Durata: <strong>" + valueByDurata[d.properties.DISTRICT] + "</strong>"+ "<br>"
+							   +"\u2022 Magnitudine: <strong>" + valueByMagnitudine[d.properties.DISTRICT] + "</strong>"+ "<br>"
+							   +"\u2022 Adancime: <strong>" + valueByAdancime[d.properties.DISTRICT] + "</strong>"+ "<br>"
+							   +"\u2022 Pagube materiale: <strong>" + valueByPagubeMateriale[d.properties.DISTRICT] + "</strong>"+ "<br>"
+							   +"\u2022 Numar replici: <strong>" + valueByNumarReplici[d.properties.DISTRICT] + "</strong>"+ "<br>";
+										});
+                       d3.select("#tooltip").classed("hidden", false);
+				}})
+                   .on("mouseout",function(){
+                       d3.select("#tooltip").classed("hidden", true);
+                   })
             .style("fill", function(d) {
                 if(valueByDecedati[d.properties.DISTRICT]<10){
                     return "#ffb2b2";
@@ -66,6 +93,8 @@ d3.json("nepal-districts.txt", function(error, ok) {
 				
     		return "gainsboro";
     	});
+		
+
 
         svg.selectAll("text")
 		.data(counties.features)
@@ -80,48 +109,13 @@ d3.json("nepal-districts.txt", function(error, ok) {
 			if(valueByDecedati[d.properties.DISTRICT]!=undefined)
 			return d.properties.DISTRICT; }); 
 
-        svg.selectAll("circle")
-            .data(counties.features)
-            .enter()
-            .append("svg:circle")
-            .attr("transform", function(d) { return "translate(" + path.centroid(d) + ")"; })
-            .attr("r", function(d) {
-                if (valueByDecedati[d.properties.DISTRICT]) {
-                    
-                    return "6";
-                }
-             })
-             .attr("fill","black")
-             .attr("opacity","1")
-			 .on("mousemove", function(d){
-                       var absoluteMousePos = d3.mouse(divNode);
-                       d3.select("#tooltip")
-                           .style("left", absoluteMousePos[0]+ 40 + "px")
-                           .style("top", absoluteMousePos[1]+ 40 + "px")
-                           .select("#value")
-                           .attr("class","font")
-                           .html(function(){
-							   return "<strong>"+"Detalii despre cutremurul din "+"<br>" + d.properties.DISTRICT +"</strong> " + "<br><br>" 
-							   +"\u2022 Decedati: <strong>" + valueByDecedati[d.properties.DISTRICT] + "</strong> "	+ "<br>"
-							   +"\u2022 Raniti: <strong>" + valueByRaniti[d.properties.DISTRICT] + "</strong>"+ "<br>"
-							   +"\u2022 Disparuti: <strong>" + valueByDisparuti[d.properties.DISTRICT] + "</strong>"+ "<br>"
-							   +"\u2022 Cladiri distruse: <strong>" + valueByCladiriDistruse[d.properties.DISTRICT] + "</strong>"+ "<br>"
-							   +"\u2022 Durata: <strong>" + valueByDurata[d.properties.DISTRICT] + "</strong>"+ "<br>"
-							   +"\u2022 Magnitudine: <strong>" + valueByMagnitudine[d.properties.DISTRICT] + "</strong>"+ "<br>"
-							   +"\u2022 Adancime: <strong>" + valueByAdancime[d.properties.DISTRICT] + "</strong>"+ "<br>"
-							   +"\u2022 Pagube materiale: <strong>" + valueByPagubeMateriale[d.properties.DISTRICT] + "</strong>"+ "<br>"
-							   +"\u2022 Numar replici: <strong>" + valueByNumarReplici[d.properties.DISTRICT] + "</strong>"+ "<br>";
-						   });
-
-                       d3.select("#tooltip").classed("hidden", false);
-                   })
-                   .on("mouseout",function(){
-                       d3.select("#tooltip").classed("hidden", true);
-                   });
-
     	//county borders
     	svg.append("path").datum(topojson.mesh(ok, ok.objects.districts, function(a, b) {
     		return a !== b;
     	})).attr("class", "county-border").attr("d", path);
+		
+
     });
+	
+	
 });
