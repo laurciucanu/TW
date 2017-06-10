@@ -610,6 +610,10 @@ margin-top:0px;
   margin-top:220px;
 }
 
+path:hover {
+	fill-opacity: .8;
+}
+
 /*END CSS HARTA*/
 
 
@@ -952,3 +956,16 @@ svg#fillgaugeBhojpur, svg#fillgaugeTaplejung, svg#fillgaugeTerhathum ,svg#fillga
 /* End Text */
 
 /* END ACASA */
+
+#legend {
+    padding: 1.5em 0 0 1.5em;
+}
+
+li.key {
+    border-top-width: 15px;
+    border-top-style: solid;
+    font-size: .75em;
+    width: 10%;
+    padding-left: 0;
+    padding-right: 0;
+}
