@@ -3,8 +3,8 @@ var width = 1800, height = 800;
 var divNode = d3.select('#map').node();
 
 var projection = d3.geo.mercator()
-	.scale(9000)
-	.translate([width / 2, height / 2])
+	.scale(14200)
+	.translate([width / 4, height / 4])
 	.center([83.985593872070313, 28.465876770019531]);
 
 var path = d3.geo.path().projection(projection);
@@ -57,7 +57,7 @@ d3.json("nepal-districts.txt", function(error, ok) {
                        var absoluteMousePos = d3.mouse(divNode);
                        d3.select("#tooltip")
 						   .style("left", absoluteMousePos[0]-40 + "px")
-                           .style("top", absoluteMousePos[1]-180 + "px")
+                           .style("top", absoluteMousePos[1]-160 + "px")
                            .select("#value")
                            .attr("class","font")
                            .html(function(){
@@ -116,6 +116,5 @@ d3.json("nepal-districts.txt", function(error, ok) {
 		
 
     });
-	
 	
 });
